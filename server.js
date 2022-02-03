@@ -64,7 +64,7 @@ app.use(cors()); //Cors for crossing the origin allowances/domain requests e.g, 
 
 app.get("/", (req, res, next) => {
 
-  // the message will get below when the server is loaded.
+  // the message will come up when the server is loaded.
 
   res.send(
 
