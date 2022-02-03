@@ -1,0 +1,15 @@
+@import "navigation.css";
+
+body{
+    background-color: rgb(241, 236, 243);
+}
+h1,h2,h3{
+    color:tomato;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+h4{ color:rgb(70, 85, 41);
+    margin-top: 30px;
+    margin-left: 200px;
+}
