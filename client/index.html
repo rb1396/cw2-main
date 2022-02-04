@@ -192,7 +192,7 @@
 
                     //Set the url to your heroku server and route
 
-                    fetch('http://localhost:3000/collection/Lessons/' + this.lessons[Space]._id, {
+                    fetch('https://rabbiaapp2.herokuapp.com/collection/Lessons' + this.lessons[Space]._id, {
 
                     method: 'PUT', //Set the HTTP method as 'PUT'
 
@@ -352,7 +352,7 @@
                     };
                     this.orders.push(userDetails);
 
-                    fetch('http://localhost:3000/collection/Order', {
+                    fetch('https://rabbiaapp2.herokuapp.com/collection/Order', {
 
                     method: 'POST', //seting the HTTP method as 'POST'
 
@@ -391,7 +391,7 @@
 
 //The Fetch has the heroku and the GET collections route
 
-fetch('http://localhost:3000/collection/Lessons').then(
+fetch('https://rabbiaapp2.herokuapp.com/collection/Lessons').then(
 
     function (response) {   //Returns the result from the Server when the fetch promise resolves.
 
