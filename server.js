@@ -16,7 +16,21 @@ const app = express(); //This is where the express app has been created by calli
 app.use(express.static("client"));
 app.use(express.static("images"));
  
-
+app.use("/images", function (req, res, next) {
+  // Uses path.join to find the path where the file should be
+  var filePath = path.join(__dirname,
+      "images"
+      , req.url);
+  // Built-in fs.stat gets info about a file
+  fs.stat(filePath, function (err, fileInfo) {
+      if (err) {
+          next();
+          return;
+      }
+      if (fileInfo.isFile()) res.sendFile(filePath);
+      else next();
+  });
+});
 //Start of the database
 
  
