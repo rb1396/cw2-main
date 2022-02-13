@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <title>School Club</title>
-    <script src="https://unpkg.com/vue"></script>
-    <script src="Lesson.js"></script>
-    <link rel="stylesheet"href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/70b00d3816.js" crossorigin="anonymous"></script>
     <div id="application"><!--main ID where the all code goes-->
         <header id="navbar">
@@ -108,7 +107,7 @@
                     <p>First Name: {{checkout.Name}}</p>
                     <p>Phone Number: {{checkout.PhoneNo}}</p>
                   
-                    <!-- if user added phone and name is accoring to the requirement,or true it will display the checkout button-->
+                    <!-- if user added phone and name is according to the requirement,or true it will display the checkout button-->
                     <!--onec the value is true then user will be able process the purchase-->
                     <button v-on:click="purchase">Checkout</button>
                     <div id="check-out"></div>
@@ -400,7 +399,7 @@ fetch('https://rabbiaapp2.herokuapp.com/collection/Lessons').then(
             function (json) {
 
                 //Saving the return JSON Object from the Server to the lessons vue data member.
-
+                console.log("log 1 " + json)
                 lessonApp.lessons = json;   //Lesson app is the name of the VUE Object and lessons is its data member.
 
             });
