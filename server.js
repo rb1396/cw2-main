@@ -13,7 +13,7 @@ const bodyParser = require("body-parser");
  
 
 const app = express(); //This is where the express app has been created by calling the express function.
-
+app.use(express.static("client"));
  
 
 //Start of the database
