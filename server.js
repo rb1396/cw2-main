@@ -13,8 +13,8 @@ const bodyParser = require("body-parser");
  
 
 const app = express(); //This is where the express app has been created by calling the express function.
-app.use(express.static("client"));
-app.use(express.static("images"));
+app.use(express.static("client")); //display app 
+app.use(express.static("images"));//display images which are linked with app
  
 app.use("/images", function (req, res, next) {
   // Uses path.join to find the path where the file should be
@@ -53,7 +53,7 @@ MongoClient.connect(
 
 );
 
- 
+
 
 //This middleware is used for selecting a particular collection.
 
