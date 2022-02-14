@@ -201,7 +201,7 @@
 
                     },
 
-                    body: JSON.stringify({ "Space": this.counter(lesson) }), //Need to stringify the JSON object
+                    body: JSON.stringify({ "Space": this.counter(lesson) }), //Need to stringify the JSON object//displays  remaininglessons 
 
                     }) //chnage
 
@@ -388,7 +388,7 @@
         },
         created: function () {  //This Function will be executed when the client front end loads up. Runs when the VUE insatnce is created.
 
-//The Fetch has the heroku and the GET collections route
+//The Fetch has the heroku and the GET collections route// get route
 
 fetch('https://rabbiaapp2.herokuapp.com/collection/Lessons').then(
 
