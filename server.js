@@ -42,7 +42,7 @@ let db; //Declares the databse varible. Below, is the connection of the database
 
 MongoClient.connect(
 
-  "mongodb+srv://Rabbia:abc@cluster0.o2a3c.mongodb.net/test?authSource=admin&replicaSet=atlas-z2lv3v-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",
+  "mongodb+srv://Rabbia:mdx123@cluster0.o2a3c.mongodb.net/test?authSource=admin&replicaSet=atlas-z2lv3v-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true",
 
   (err, client) => {
 
