@@ -18,9 +18,8 @@ app.use(express.static("images"));//display images which are linked with app
  
 app.use("/images", function (req, res, next) {
   // middleware' Uses path.join to find the path where the file should be
-  var filePath = path.join(__dirname,
-      "images"
-      , req.url);
+  var filePath = path.join(__dirname, "images"
+ , req.url);
   // Built-in fs.stat gets info about a file
   console.log(filePath + " " + req.url)
   console.log(Date.now())
